@@ -2,6 +2,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 # data is divided into three groups,Raw , test ,training
+#"A" files are modifed by inserting "1" to the first colomn i.e Argumenting
 train_data=pd.read_csv("/home/chandragupta/Desktop/Ainsurance_train.csv")
 test_data=pd.read_csv("/home/chandragupta/Desktop/Ainsurance_test.csv")
 all_data=pd.read_csv("/home/chandragupta/Desktop/Ainsurance.csv")
@@ -12,7 +13,6 @@ test_X=test_data[feature].values
 test_y=test_data['expenses'].values
 train_X=train_data[feature].values
 train_y=train_data['expenses'].values
-print(X.mean())
 #data normalize
 ntest_X=(test_X-X.mean())/X.std()
 ntest_y=(test_y-y.mean())/y.std()
