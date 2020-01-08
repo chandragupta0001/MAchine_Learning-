@@ -1,0 +1,1 @@
+due to size limitation MNSIT digit dataset and MNSIT fashion dataset is not being attached in file. care must be taken as labels in dataset is in first column but in code it is modified to last column.
